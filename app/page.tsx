@@ -75,14 +75,7 @@ const CV_DATA = {
 // ---------------------------------------------------------
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { 
-      duration: 0.8, 
-      ease: "easeInOut" 
-    } 
-  }
+  visible: { opacity: 1, y: 0 }
 };
 
 const staggerContainer = {
@@ -324,8 +317,9 @@ const Hero = () => {
         >
           <motion.div 
   variants={fadeUp} 
-  transition={{ duration: 0.8, ease: "easeInOut" }}
+  transition={{ duration: 0.8 }}
   className="mb-8 inline-block"
+>
 >
   <span className="px-4 py-1.5 border border-yellow-700/50 rounded-full text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-yellow-500/80 bg-yellow-900/10 backdrop-blur-sm">
     PORTFOLIO
