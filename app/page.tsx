@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { MapPin, Phone, Mail, LinkedIn, Menu, X, ChevronRight, Award, Briefcase, GraduationCap, ArrowRight, MessageSquare, Send, Bot, User, Loader2, Sparkles, RefreshCw } from 'lucide-react';
+import { MapPin, Phone, Mail, Menu, X, ChevronRight, Award, Briefcase, GraduationCap, ArrowRight, MessageSquare, Send, Bot, User, Loader2, Sparkles, RefreshCw } from 'lucide-react';
 
 // ---------------------------------------------------------
 // DATA CV
@@ -14,7 +14,7 @@ const CV_DATA = {
     phone: "+62 821-3261-8477",
     whatsapp: "6282132618477",
     location: "Tuban, Jawa Timur",
-    LinkedIn: "Aurelio Rafel",
+    linkedin: "Aurelio Rafel",
     summary: "Lulusan SMK dengan pengalaman di bidang administrasi, pelayanan pelanggan, dan digital marketing. Memiliki ketertarikan yang tinggi terhadap pengolahan data menggunakan Microsoft Excel serta sedang mengembangkan kemampuan melalui pelatihan Practical Office Advance. Teliti, cepat belajar, mampu bekerja di bawah tekanan, dan memiliki motivasi untuk berkembang sebagai profesional di bidang administrasi dan pengolahan data."
   },
   experience: [
