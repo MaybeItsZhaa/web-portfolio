@@ -154,7 +154,7 @@ const Preloader = ({ setLoading }: { setLoading: any }) => {
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, yoyo: Infinity }}
+          transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
           className="text-yellow-600/80 text-sm tracking-[0.4em] uppercase font-light"
         >
           Memuat
