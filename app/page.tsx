@@ -831,7 +831,7 @@ const Contact = () => {
                   <label htmlFor="message" className="block text-xs font-bold text-neutral-500 uppercase tracking-widest">Pesan</label>
                   <textarea 
                     id="message" 
-                    rows="4" 
+                    rows={4}
                     className="w-full px-0 py-3 bg-transparent border-b border-neutral-700 focus:border-yellow-600 focus:outline-none text-white font-light transition-colors resize-none" 
                     placeholder="Isi pesan..."
                   ></textarea>
