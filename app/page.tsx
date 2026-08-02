@@ -618,7 +618,7 @@ const AIFitChecker = () => {
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleCheckFit = async (e) => {
+  const handleCheckFit = async (e: any) => {
     e.preventDefault();
     if (!jobRole.trim() || loading) return;
 
