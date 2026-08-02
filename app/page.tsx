@@ -315,11 +315,10 @@ const Hero = () => {
           variants={staggerContainer}
           className="max-w-5xl mx-auto flex flex-col items-center"
         >
-          <motion.div 
+<motion.div 
   variants={fadeUp} 
   transition={{ duration: 0.8 }}
   className="mb-8 inline-block"
->
 >
   <span className="px-4 py-1.5 border border-yellow-700/50 rounded-full text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-yellow-500/80 bg-yellow-900/10 backdrop-blur-sm">
     PORTFOLIO
