@@ -130,7 +130,7 @@ const CustomCursor = () => {
   );
 };
 
-const Preloader = ({ setLoading }) => {
+const Preloader = ({ setLoading }: { setLoading: any }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
