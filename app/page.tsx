@@ -880,7 +880,7 @@ const AIChatAssistant = () => {
     scrollToBottom();
   }, [messages, isLoading]);
 
-  const handleSendMessage = async (e) => {
+  const handleSendMessage = async (e: any) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
 
