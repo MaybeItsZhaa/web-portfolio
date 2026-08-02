@@ -94,10 +94,10 @@ const CustomCursor = () => {
   const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
-    const updateMousePosition = (e) => {
+    const updateMousePosition = (e: any) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
-    const handleMouseOver = (e) => {
+    const handleMouseOver = (e: any) => {
       if (e.target.tagName.toLowerCase() === 'button' || e.target.tagName.toLowerCase() === 'a' || e.target.closest('button') || e.target.closest('a')) {
         setIsHovering(true);
       } else {
