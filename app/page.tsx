@@ -75,7 +75,14 @@ const CV_DATA = {
 // ---------------------------------------------------------
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut" } }
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      duration: 0.8, 
+      ease: "easeInOut" 
+    } 
+  }
 };
 
 const staggerContainer = {
@@ -315,11 +322,15 @@ const Hero = () => {
           variants={staggerContainer}
           className="max-w-5xl mx-auto flex flex-col items-center"
         >
-          <motion.div variants={fadeUp} className="mb-8 inline-block">
-            <span className="px-4 py-1.5 border border-yellow-700/50 rounded-full text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-yellow-500/80 bg-yellow-900/10 backdrop-blur-sm">
-              PORTFOLIO
-            </span>
-          </motion.div>
+          <motion.div 
+  variants={fadeUp} 
+  transition={{ duration: 0.8, ease: "easeInOut" }}
+  className="mb-8 inline-block"
+>
+  <span className="px-4 py-1.5 border border-yellow-700/50 rounded-full text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-yellow-500/80 bg-yellow-900/10 backdrop-blur-sm">
+    PORTFOLIO
+  </span>
+</motion.div>
 
           <motion.h1 variants={fadeUp} className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-6 leading-[1.05] text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-500 to-yellow-800 pb-2">
             {CV_DATA.personal.name}
